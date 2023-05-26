@@ -414,11 +414,16 @@
 }
 
 .eighth-section .card-wrapper {
-  margin: 0 auto;
+  flex-direction: column;
+  width: 58vw;
+  margin: auto;
+  align-items: flex-start;
+  gap: 50px;
 }
 
 .eighth-section .card-wrapper .description {
-  max-width: 185px;
+  margin-top: 10px;
+  width: 42vw;
 }
 
 .eighth-section .card-wrapper .button {
@@ -438,7 +443,12 @@
   background-color: #16697a;
   padding: 55px 87px;
   color: var(--white-color);
+}
+
+.footer .top-part .container {
   gap: 30px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer .top-part .block-nav {
@@ -466,7 +476,12 @@
 .footer .bottom-part {
   background-color: #fafafa;
   padding: 25px 87px;
+}
+
+.footer .bottom-part .container {
   gap: 50px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer .bottom-part .copyright {
@@ -558,6 +573,14 @@
     background-color: #fafafa;
   }
 
+  .fourth-section {
+    padding: 100px 0;
+  }
+
+  .fifth-section .container {
+    gap: 85px;
+  }
+
   .fourth-section .container > .description {
     margin: 15px auto 100px;
     gap: 0 121px;
@@ -565,6 +588,7 @@
 
   .fourth-section .video-list-wrap {
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   .fourth-section .video-list-wrap .list-part {
@@ -595,4 +619,77 @@
     width: 76px;
   }
 
+  .fifth-section {
+    padding: 50px 0 137px;
+  }
+
+  .sixth-section .content-wrapper .container {
+    justify-content: space-between;
+    text-align: start;
+    flex-wrap: nowrap;
+  }
+
+  .sixth-section .content-wrapper .input-button-wrapper {
+    max-width: 450px;
+  }
+
+  .sixth-section {
+    height: 77px;
+    position: relative;
+    background-color: var(--main-text-color);
+  }
+
+  .sixth-section .content-wrapper {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .seventh-section {
+    padding: 80px 0 148px;
+  }
+
+  .seventh-section .main-title + .description {
+    font-weight: 500;
+    margin: 10px auto 80px;
+  }
+
+  .seventh-section .contact-cards {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .seventh-section .contact-cards .card:nth-child(2) {
+    height: 393px;
+  }
+
+  .eighth-section .card-wrapper {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .footer .top-part {
+    padding: 50px 0;
+  }
+
+  .footer .top-part .block-nav {
+    gap: 30px;
+    min-width: 148px;
+  }
+
+  .footer .bottom-part {
+    padding: 25px 0;
+  }
+
+  .footer .bottom-part .container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .footer .top-part .container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
